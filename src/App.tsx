@@ -22,7 +22,7 @@ function App() {
 				{windowSize}{' '}
 				{navMinimize ? 'NavMinimize is true' : 'NavMinimize is false'}
 			</h3> */}
-			<h1 className='text-zinc-100 text-xl sm:text-4xl  md:text-5xl lg:text-6xl font-header my-4'>
+			<h1 className='text-zinc-100 text-xl sm:text-4xl md:text-5xl lg:text-6xl font-header my-4'>
 				Varning From Montreal 2023
 			</h1>
 			{/* <h2 className='text-white text-5xl'>windowSize: {windowSize}</h2> */}
