@@ -50,6 +50,11 @@ function App() {
 				<Route path='/program' element={<Program />}></Route>
 				{/* <Route path='/edit/:id' element={<EditPage />}></Route> */}
 			</Routes>
+			<footer>
+				<p className='text-red-400 text-center my-3'>
+					&copy; Varning Productions {new Date().getFullYear()}
+				</p>
+			</footer>
 		</div>
 	)
 }
