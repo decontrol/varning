@@ -51,9 +51,12 @@ function App() {
 				{/* <Route path='/edit/:id' element={<EditPage />}></Route> */}
 			</Routes>
 			<footer>
-				<p className='text-sm md:text-md lg:text-lg text-red-400 text-center my-3'>
-					&copy; Varning Productions {new Date().getFullYear()}&nbsp; 'Nothing
-					ever burns down by itself every fire needs a little bit of help'
+				<p className='text-sm md:text-md lg:text-lg text-red-200 text-center my-3'>
+					&copy; Varning Productions {new Date().getFullYear()}&nbsp;{' '}
+					<em>
+						Nothing ever burns down by itself every fire needs a little bit of
+						help
+					</em>
 				</p>
 			</footer>
 		</div>
