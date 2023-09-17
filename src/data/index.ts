@@ -77,7 +77,7 @@ export const programData = [
 	{
 		_id: 2,
 		date: 'Friday Matinee Show September 22nd',
-		venue: "L'Achoppe (1800 Létourneux St.)",
+		venue: "L'Achoppe (1800 Letourneux St)",
 		price: '$15',
 		startTime: 'Doors: 2:00pm - Show: 2:30pm',
 		bands: [
@@ -135,7 +135,7 @@ export const programData = [
 	{
 		_id: 4,
 		date: 'Saturday Matinee Show September 23rd',
-		venue: "L'Achoppe (1800 Létourneux St.)",
+		venue: "L'Achoppe (1800 Letourneux St)",
 		price: '$15',
 		startTime: 'Doors: 2:00pm - Show: 2:30pm',
 		bands: [

@@ -13,12 +13,12 @@ type CardProps = {
 
 const Card = ({ show }: CardProps) => {
 	return (
-		<div className='card my-6'>
+		<div className='card mb-6 text-center'>
 			<h3 className='text-lg text-red-400 mb-1 font-display'>{show.date}</h3>
 			<p className='text-sm text-bold text-red-200 mb-4'>
 				{show.venue}
 				<br />
-				{show.price} {show.startTime}
+				{show.price} / {show.startTime}
 			</p>
 			<ul>
 				{show.bands.map((band, i) => {

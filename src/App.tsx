@@ -27,7 +27,11 @@ function App() {
 				Varning From Montreal 2023
 			</h1> */}
 
-			<img src={banners[banners.length - 2]} alt='Varning from Montreal 2023' />
+			<img
+				src={banners[banners.length - 2]}
+				alt='Varning from Montreal 2023'
+				className='w-full h-[140px] lg:w-[600px] lg:h-[300px] object-top object-cover mx-auto my-4 lg:my-6'
+			/>
 			<ToastContainer
 				position='top-center'
 				autoClose={2000}

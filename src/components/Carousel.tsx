@@ -66,7 +66,7 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 
 	return (
 		<>
-			<PageTitle text='Varning Poster Gallery' />
+			<PageTitle text='Varning Poster Gallery' size={6} />
 			<div
 				{...handlers}
 				className='carousel-container bg-slate-600 overflow-hidden relative'
