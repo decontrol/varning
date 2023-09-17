@@ -4,6 +4,7 @@ import Nav from './components/Nav'
 import { useEffect, useState } from 'react'
 import { ToastContainer } from 'react-toastify'
 import Program from './components/Program'
+import { banners } from './data/images.ts'
 
 function App() {
 	const [windowSize, setWindowSize] = useState(0)
@@ -20,11 +21,13 @@ function App() {
 	}, [windowSize])
 
 	return (
-		<div className='container p-[16px] w-full font-body lg:w-[958px] mx-auto'>
+		<div className='container px-[16px] w-full font-body lg:w-[958px] mx-auto'>
 			<Nav navMinimize={navMinimize} />
-			<h1 className='header-big text-zinc-100 text-xl sm:text-4xl md:text-5xl lg:text-6xl mb-4'>
+			{/* <h1 className='header-lg font-header text-zinc-100 text-xl sm:text-4xl md:text-5xl lg:text-6xl mb-4'>
 				Varning From Montreal 2023
-			</h1>
+			</h1> */}
+
+			<img src={banners[banners.length - 2]} alt='Varning from Montreal 2023' />
 			<ToastContainer
 				position='top-center'
 				autoClose={2000}

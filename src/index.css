@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-	.header-big {
+	.header-lg {
 		font-family: 'Special Elite';
+	}
+	.header-md {
+		font-family: 'Stardos Stencil';
 	}
 }
 

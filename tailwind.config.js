@@ -10,6 +10,7 @@ export default {
 				display: ['Oswald'],
 				body: ['Roboto'],
 				header: ['Special Elite'],
+				stencil: ['Stardos Stencil'],
 			},
 		},
 	},
