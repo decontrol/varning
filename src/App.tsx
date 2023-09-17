@@ -1,6 +1,9 @@
+import { Route, Routes } from 'react-router-dom'
 import Carousel from './components/Carousel'
 import Nav from './components/Nav'
 import { useEffect, useState } from 'react'
+import { ToastContainer } from 'react-toastify'
+import Program from './components/Program'
 
 function App() {
 	const [windowSize, setWindowSize] = useState(0)
@@ -17,17 +20,29 @@ function App() {
 	}, [windowSize])
 
 	return (
-		<div className='w-full lg:w-[958px] mx-auto'>
+		<div className='container p-[16px] w-full font-body lg:w-[958px] mx-auto'>
 			<Nav navMinimize={navMinimize} />
-			{/* <h3 className='text-zinc-100 text-3xl'>
-				{windowSize}{' '}
-				{navMinimize ? 'NavMinimize is true' : 'NavMinimize is false'}
-			</h3> */}
-			<h1 className='header-big text-zinc-100 text-xl sm:text-4xl md:text-5xl lg:text-6xl font-["Special Elite"] my-4'>
+			<h1 className='header-big text-zinc-100 text-xl sm:text-4xl md:text-5xl lg:text-6xl mb-4'>
 				Varning From Montreal 2023
 			</h1>
+			<ToastContainer
+				position='top-center'
+				autoClose={2000}
+				hideProgressBar={false}
+				newestOnTop={false}
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+				theme='dark'
+			/>
 			{/* <h2 className='text-white text-5xl'>windowSize: {windowSize}</h2> */}
-			<Carousel windowSize={windowSize} />
+			<Routes>
+				<Route index element={<Carousel windowSize={windowSize} />}></Route>
+				<Route path='/program' element={<Program />}></Route>
+				{/* <Route path='/edit/:id' element={<EditPage />}></Route> */}
+			</Routes>
 		</div>
 	)
 }

@@ -3,8 +3,9 @@ import { useSwipeable } from 'react-swipeable'
 import { banners } from '../data/images.ts'
 import { carouselData } from '../data/index.ts'
 import CarouselButton from './CarouselButton'
-import { ToastContainer, toast } from 'react-toastify'
+import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import PageTitle from './PageTitle.tsx'
 
 type CarouselProps = {
 	windowSize: number
@@ -13,12 +14,12 @@ type CarouselProps = {
 const Carousel = ({ windowSize }: CarouselProps) => {
 	const [slideCount, setSlideCount] = useState(1)
 	const [distanceToMove, setDistanceToMove] = useState(0)
-	const [moveStyle, setMoveStyle] = useState(0)
+	const [rightDistance, setRightDistance] = useState(0)
 
 	const slideLength = carouselData.length
 
 	const classes =
-		'relative touch-pan-x image-container text-zinc-400 flex flex-row transition-[right] duration-200 ease-in-out'
+		'relative touch-pan-x image-container text-zinc-400 flex flex-row transition-[right] duration-300 ease-in'
 
 	const customId = 'custom-id-yes' // to prevent multiple toasts from appearing
 
@@ -32,7 +33,7 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 	}
 
 	useEffect(() => {
-		setDistanceToMove(windowSize >= 1024 ? 958 : windowSize)
+		setDistanceToMove(windowSize >= 1024 ? 926 : windowSize - 32) // '.container' has 16px on both sides so deducted 32 from both widths
 		notify()
 		// console.log('window size:', windowSize)
 	}, [windowSize])
@@ -48,43 +49,29 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 	const handleClickNext = () => {
 		if (slideCount < slideLength) {
 			setSlideCount(slideCount + 1)
-			const currentXOffset = Number(moveStyle)
+			const currentXOffset = Number(rightDistance)
 			const distance = currentXOffset + distanceToMove
-			setMoveStyle(distance)
+			setRightDistance(distance)
 		}
 	}
 
 	const handleClickPrev = () => {
 		if (slideCount > 1) {
 			setSlideCount(slideCount - 1)
-			const currentXOffset = Number(moveStyle)
+			const currentXOffset = Number(rightDistance)
 			const distance = currentXOffset - distanceToMove
-			setMoveStyle(distance)
+			setRightDistance(distance)
 		}
 	}
 
 	return (
 		<>
-			<h2 className='hidden text-white text-5xl'>
-				distanceToMove: {distanceToMove}
-			</h2>
+			<PageTitle text='Varning Poster Gallery' size={4} />
 			<div
 				{...handlers}
-				className='carousel-container bg-slate-600 overflow-hidden top-[50%] relative'
+				className='carousel-container bg-slate-600 overflow-hidden relative'
 			>
-				<ToastContainer
-					position='top-center'
-					autoClose={5000}
-					hideProgressBar={false}
-					newestOnTop={false}
-					closeOnClick
-					rtl={false}
-					pauseOnFocusLoss
-					draggable
-					pauseOnHover
-					theme='dark'
-				/>
-				<div className={classes} style={{ right: `${moveStyle}px` }}>
+				<div className={classes} style={{ right: `${rightDistance}px` }}>
 					{/* h-full sm:h-[600px] md:h-[800px] lg:h-[1200px] xl:h-[1500px] */}
 					{carouselData.map((item, i) => {
 						return (
@@ -99,7 +86,7 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 					})}
 				</div>
 				{/* <div className='text-5xl text-white'>
-					Current Slide: {slideCount} moveStyle.right: {moveStyle}
+					Current Slide: {slideCount} rightDistance.right: {rightDistance}
 				</div> */}
 				<div className='flex justify-between items-center'>
 					<CarouselButton

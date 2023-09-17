@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 type NavProps = {
 	navMinimize: boolean
@@ -13,11 +14,13 @@ const Nav = ({ navMinimize }: NavProps) => {
 
 	return (
 		<nav className={classes}>
-			<h1>This is the Nav</h1>
 			<ul>
-				<li className='text-zinc-100'>Posters</li>
-				<li className='text-zinc-100'>Program</li>
-				<li className='text-zinc-100'>Contact</li>
+				<li className='text-zinc-100'>
+					<Link to='/'>Posters</Link>
+				</li>
+				<li className='text-zinc-100'>
+					<Link to='/program'>Program</Link>
+				</li>
 			</ul>
 		</nav>
 	)
