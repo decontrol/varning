@@ -11,6 +11,7 @@ function App() {
 	}
 
 	useEffect(() => {
+		document.title = '15 Years of Varning!!!'
 		setWindowSize(window.innerWidth)
 		windowSize > 1200 ? setNavMinimize(false) : setNavMinimize(true)
 	}, [windowSize])
@@ -22,7 +23,7 @@ function App() {
 				{windowSize}{' '}
 				{navMinimize ? 'NavMinimize is true' : 'NavMinimize is false'}
 			</h3> */}
-			<h1 className='text-zinc-100 text-xl sm:text-4xl md:text-5xl lg:text-6xl font-header my-4'>
+			<h1 className='header-big text-zinc-100 text-xl sm:text-4xl md:text-5xl lg:text-6xl font-["Special Elite"] my-4'>
 				Varning From Montreal 2023
 			</h1>
 			{/* <h2 className='text-white text-5xl'>windowSize: {windowSize}</h2> */}
