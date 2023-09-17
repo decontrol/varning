@@ -42,7 +42,7 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 		onSwipedLeft: () => handleClickNext(),
 		onSwipedRight: () => handleClickPrev(),
 		swipeDuration: 500,
-		preventScrollOnSwipe: true,
+		preventScrollOnSwipe: false,
 		trackMouse: true,
 	})
 
