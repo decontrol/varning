@@ -14,8 +14,8 @@ type CardProps = {
 const Card = ({ show }: CardProps) => {
 	return (
 		<div className='card mb-6 text-center'>
-			<h3 className='text-lg text-red-400 mb-1 font-display'>{show.date}</h3>
-			<p className='text-sm text-bold text-red-200 mb-4'>
+			<h3 className='text-lg text-red-400 mb-1 font-header'>{show.date}</h3>
+			<p className='text-sm text-bold text-white mb-4'>
 				{show.venue}
 				<br />
 				{show.price} / {show.startTime}
@@ -29,7 +29,7 @@ const Card = ({ show }: CardProps) => {
 								i % 2 === 0 ? 'bg-gray-900' : 'bg-transparent'
 							}`}
 						>
-							<strong className='text-white'>{band.name}</strong>
+							<strong className='text-red-400'>{band.name}</strong>
 							<p className='text-white'>{band.timeSlot}</p>
 						</li>
 					)

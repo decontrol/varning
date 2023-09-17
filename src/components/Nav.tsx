@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import Hamburger from 'hamburger-react'
 
 type NavProps = {
 	navMinimize: boolean
@@ -7,21 +8,34 @@ type NavProps = {
 
 const Nav = ({ navMinimize }: NavProps) => {
 	const [classes, setClasses] = useState('')
+	const [isOpen, setOpen] = useState(false)
 
 	useEffect(() => {
-		setClasses(`nav ${navMinimize ? 'mini-nav' : 'full-nav'}`)
-	}, [navMinimize])
+		setClasses(
+			`nav fixed top-0 right-0 z-10 bg-red-600 bg-opacity-60 px-3 py-1 transition-all duration-500 ease-in-out
+      ${navMinimize ? 'mini-nav' : 'full-nav'} ${
+				isOpen ? 'bg-opacity-95 w-full' : ''
+			}`
+		)
+	}, [isOpen])
 
 	return (
 		<nav className={classes}>
-			<ul>
-				<li className='text-zinc-100'>
-					<Link to='/'>Posters</Link>
-				</li>
-				<li className='text-zinc-100'>
-					<Link to='/program'>Program</Link>
-				</li>
-			</ul>
+			<Hamburger color='#fff' toggled={isOpen} toggle={setOpen} size={24} />
+			{isOpen && (
+				<ul className='flex justify-evenly mb-2 mt-[-37px]'>
+					<li className='text-zinc-100 text-xl'>
+						<Link onClick={() => setOpen(false)} to='/'>
+							Posters
+						</Link>
+					</li>
+					<li className='text-zinc-100 text-xl'>
+						<Link onClick={() => setOpen(false)} to='/program'>
+							Program
+						</Link>
+					</li>
+				</ul>
+			)}
 		</nav>
 	)
 }

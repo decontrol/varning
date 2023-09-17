@@ -4,10 +4,10 @@
 
 @layer base {
 	.header-lg {
-		font-family: 'Special Elite';
+		font-family: 'Special Elite', cursive;
 	}
 	.header-md {
-		font-family: 'Stardos Stencil';
+		font-family: 'Stardos Stencil', cursive;
 	}
 }
 
@@ -15,14 +15,8 @@ body {
 	background-color: #000;
 }
 
-.nav {
-	position: fixed;
-	top: 10px;
-	right: 0;
-}
-
-.nav.mini-nav {
-	/* display: none; */
+.hamburger-react {
+	margin-left: auto;
 }
 
 /* .Toastify__toast-body {

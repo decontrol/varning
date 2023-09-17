@@ -69,7 +69,7 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 			<PageTitle text='Varning Poster Gallery' size={6} />
 			<div
 				{...handlers}
-				className='carousel-container bg-slate-600 overflow-hidden relative'
+				className='carousel-container bg-black overflow-hidden relative'
 			>
 				<div className={classes} style={{ right: `${rightDistance}px` }}>
 					{/* h-full sm:h-[600px] md:h-[800px] lg:h-[1200px] xl:h-[1500px] */}
