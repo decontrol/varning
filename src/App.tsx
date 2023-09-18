@@ -49,8 +49,11 @@ function App() {
 			/>
 			{/* <h2 className='text-white text-5xl'>windowSize: {windowSize}</h2> */}
 			<Routes>
-				<Route index element={<Carousel windowSize={windowSize} />}></Route>
-				<Route path='/program' element={<Program />}></Route>
+				<Route index element={<Program />}></Route>
+				<Route
+					path='/posters'
+					element={<Carousel windowSize={windowSize} />}
+				></Route>
 				<Route path='/things' element={<ThingsToDo />}></Route>
 				<Route path='*' element={<NotFound />} />
 			</Routes>

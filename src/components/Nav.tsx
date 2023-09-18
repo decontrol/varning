@@ -28,14 +28,16 @@ const Nav = ({ navMinimize }: NavProps) => {
 				<ul className='flex justify-evenly mb-2 mt-[-37px] mx-6'>
 					<li className={navClasses}>
 						<Link onClick={() => setOpen(false)} to='/'>
-							Posters
-						</Link>
-					</li>
-					<li className={navClasses}>
-						<Link onClick={() => setOpen(false)} to='/program'>
 							Program
 						</Link>
 					</li>
+
+					<li className={navClasses}>
+						<Link onClick={() => setOpen(false)} to='/posters'>
+							Posters
+						</Link>
+					</li>
+
 					<li className={navClasses}>
 						<Link onClick={() => setOpen(false)} to='/things'>
 							Things
