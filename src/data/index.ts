@@ -52,7 +52,7 @@ export const programData = [
 		bands: [
 			{
 				name: 'No Fucker',
-				link: 'https://www.maximumrocknroll.com/we-got-ways-2/',
+				link: 'https://www.youtube.com/watch?v=MaBk-xPjI5A',
 				timeSlot: '11:25pm - 12:10am',
 			},
 			{
@@ -62,27 +62,27 @@ export const programData = [
 			},
 			{
 				name: 'Cartridge',
-				link: '',
+				link: 'https://cartridgepunk.bandcamp.com/album/verleva',
 				timeSlot: '9:50pm - 10:20pm',
 			},
 			{
 				name: 'Uzu',
-				link: '',
+				link: 'https://uzupunk.bandcamp.com/album/uzu',
 				timeSlot: '9:15pm - 9:35pm',
 			},
 			{
 				name: 'Lathe of Heaven',
-				link: '',
+				link: 'https://latheofheaven.bandcamp.com/album/bound-by-naked-skies',
 				timeSlot: '8:25pm - 9:00pm',
 			},
 			{
 				name: 'Tenaz',
-				link: '',
+				link: 'lolwhat',
 				timeSlot: '7:40pm - 8:10pm',
 			},
 			{
 				name: 'Street Gloves',
-				link: '',
+				link: 'https://streetgloves.bandcamp.com/album/street-gloves-ep',
 				timeSlot: '7:00pm - 7:25pm',
 			},
 		],
@@ -96,17 +96,17 @@ export const programData = [
 		bands: [
 			{
 				name: 'Battery March',
-				link: '',
+				link: 'https://batterymarch.bandcamp.com/album/boston-eats-its-young-futur-pour-eux-ep',
 				timeSlot: '3:50pm - 4:20pm',
 			},
 			{
 				name: 'Total Nada',
-				link: '',
+				link: 'https://totalnada.bandcamp.com/album/total-nada-ii-e-p',
 				timeSlot: '3:10pm - 3:35pm',
 			},
 			{
 				name: 'Beef',
-				link: '',
+				link: 'https://gotbeef.bandcamp.com/album/raw-cuts-2023',
 				timeSlot: '2:30pm - 2:55pm',
 			},
 		],
@@ -120,37 +120,37 @@ export const programData = [
 		bands: [
 			{
 				name: 'Cuir',
-				link: '',
+				link: 'https://cuir1.bandcamp.com/album/album',
 				timeSlot: '12:15am - 12:55am',
 			},
 			{
 				name: 'Salvaje Punk',
-				link: '',
+				link: 'https://toxicstaterecords.bandcamp.com/album/salvaje-punk-lp-2023',
 				timeSlot: '11:25pm - 12:00am',
 			},
 			{
 				name: 'Perestroika',
-				link: '',
+				link: 'https://perestroika-mtl.bandcamp.com/album/monolith',
 				timeSlot: '10:35pm - 11:10pm',
 			},
 			{
 				name: 'Hysteric Polemix',
-				link: '',
+				link: 'https://roachlegrecords.bandcamp.com/album/hysteric-polemix-songs-for-the-solstice',
 				timeSlot: '9:45pm - 10:20pm',
 			},
 			{
 				name: 'Ultra Razzia',
-				link: '',
+				link: 'https://primatorcrew.bandcamp.com/album/ultra-razzia-jusquau-bout-de-la-nuit',
 				timeSlot: '9:00pm - 9:30pm',
 			},
 			{
 				name: 'Ilusión',
-				link: '',
+				link: 'https://ilusion.bandcamp.com/album/ilusi-n-ep',
 				timeSlot: '8:15pm - 8:45pm',
 			},
 			{
 				name: 'Over The Hill',
-				link: '',
+				link: 'https://overthehillmtl.bandcamp.com/album/demonstration-2022',
 				timeSlot: '7:30pm - 8:00pm',
 			},
 		],
@@ -164,22 +164,22 @@ export const programData = [
 		bands: [
 			{
 				name: 'Vestigio',
-				link: '',
+				link: 'https://vestigiohc.bandcamp.com/album/vestigio',
 				timeSlot: '4:40pm - 5:15pm',
 			},
 			{
 				name: 'Ratpiss',
-				link: '',
+				link: 'https://ratpissmtl.bandcamp.com/album/misanthropy-now',
 				timeSlot: '3:55pm - 4:25pm',
 			},
 			{
 				name: 'Leash Aggression',
-				link: '',
+				link: 'https://www.youtube.com/watch?v=5isTP8wOQKk',
 				timeSlot: '3:10pm - 3:40pm',
 			},
 			{
 				name: 'The Nod',
-				link: '',
+				link: 'lolwhat',
 				timeSlot: '2:30pm - 2:55pm',
 			},
 		],
@@ -193,42 +193,42 @@ export const programData = [
 		bands: [
 			{
 				name: '	Meanwhile',
-				link: '',
+				link: 'https://www.youtube.com/watch?v=AfFfHAkozBk',
 				timeSlot: '12: 25am - 01: 10am',
 			},
 			{
 				name: 'End Of Pollution',
-				link: '',
+				link: 'https://www.youtube.com/watch?v=Da1tEy3ht34',
 				timeSlot: '11: 25pm - 12: 10am',
 			},
 			{
 				name: 'Decomp',
-				link: '',
+				link: 'https://decomp.bandcamp.com/album/remains',
 				timeSlot: '10: 35pm - 11: 10pm',
 			},
 			{
 				name: 'Unknown Liberty',
-				link: '',
+				link: 'https://unknownliberty.bandcamp.com/album/chaos-ny',
 				timeSlot: '9: 50pm - 10: 20pm',
 			},
 			{
 				name: 'Global Holocaust',
-				link: '',
+				link: 'https://www.youtube.com/watch?v=8BumIre9Vu8',
 				timeSlot: '9: 15pm - 9: 35pm',
 			},
 			{
 				name: 'The Lousy',
-				link: '',
+				link: 'https://thelousy.bandcamp.com/',
 				timeSlot: '8: 25pm - 9:00pm',
 			},
 			{
 				name: 'Fractured',
-				link: '',
+				link: 'https://fractured3.bandcamp.com/album/split-with-phane',
 				timeSlot: '7: 40pm - 8: 10pm',
 			},
 			{
 				name: 'A.T.E.R.',
-				link: '',
+				link: 'https://atercrust.bandcamp.com/album/demo-2022',
 				timeSlot: '7:00pm - 7: 25pm',
 			},
 		],
@@ -242,22 +242,22 @@ export const programData = [
 		bands: [
 			{
 				name: 'Last Agony',
-				link: '',
+				link: 'https://lastagony.bandcamp.com/track/radiating-in-hell-2019',
 				timeSlot: '4:00am - 4:35am',
 			},
 			{
 				name: 'Agravio',
-				link: '',
+				link: 'https://agravio.bandcamp.com/album/pinche-vida-pinche-mentira-ep',
 				timeSlot: '3:10am - 3:45am',
 			},
 			{
 				name: 'Zeal',
-				link: '',
+				link: 'https://runstatetapes.bandcamp.com/album/zeal-demonstration-2022',
 				timeSlot: '2:25am - 2:55pm',
 			},
 			{
 				name: 'Ordinance',
-				link: '',
+				link: 'lolwhat',
 				timeSlot: '1:45am - 2:10am',
 			},
 		],

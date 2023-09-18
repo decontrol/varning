@@ -6,6 +6,7 @@ type CardProps = {
 		startTime: string
 		bands: {
 			name: string
+			link: string
 			timeSlot: string
 		}[]
 	}
@@ -20,7 +21,7 @@ const Card = ({ show }: CardProps) => {
 				<br />
 				{show.price} / {show.startTime}
 			</p>
-			<ul>
+			<ul className='day-program'>
 				{show.bands.map((band, i) => {
 					return (
 						<li
@@ -29,7 +30,11 @@ const Card = ({ show }: CardProps) => {
 								i % 2 === 0 ? 'bg-[#222]' : 'bg-transparent'
 							}`}
 						>
-							<strong className='text-red-400'>{band.name}</strong>
+							<strong className='text-white'>
+								<a href={band.link} target='_blank'>
+									{band.name}
+								</a>
+							</strong>
 							<p className='text-white'>{band.timeSlot}</p>
 						</li>
 					)

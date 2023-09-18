@@ -4,7 +4,9 @@ import Nav from './components/Nav'
 import { useEffect, useState } from 'react'
 import { ToastContainer } from 'react-toastify'
 import Program from './components/Program'
+
 import { banners } from './data/images.ts'
+import NotFound from './components/NotFound.tsx'
 
 function App() {
 	const [windowSize, setWindowSize] = useState(0)
@@ -48,7 +50,7 @@ function App() {
 			<Routes>
 				<Route index element={<Carousel windowSize={windowSize} />}></Route>
 				<Route path='/program' element={<Program />}></Route>
-				{/* <Route path='/edit/:id' element={<EditPage />}></Route> */}
+				<Route path='*' element={<NotFound />} />
 			</Routes>
 			<footer>
 				<p className='text-sm md:text-md lg:text-lg text-red-200 text-center my-3'>

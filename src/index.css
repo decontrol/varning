@@ -19,6 +19,6 @@ body {
 	margin-left: auto;
 }
 
-/* .Toastify__toast-body {
-	font-size: 16px;
-} */
+.day-program a {
+	text-decoration: underline;
+}
