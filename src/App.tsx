@@ -28,7 +28,7 @@ function App() {
 			</h1> */}
 
 			<img
-				src={banners[banners.length - 2]}
+				src={banners[banners.length - 1]}
 				alt='Varning from Montreal 2023'
 				className='w-[350px] h-[170px] md:w-[600px] md:h-[300px] lg:w-[750px] lg:h-[350px] object-top object-cover mx-auto my-4 lg:my-6'
 			/>

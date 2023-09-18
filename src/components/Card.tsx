@@ -26,7 +26,7 @@ const Card = ({ show }: CardProps) => {
 						<li
 							key={band.timeSlot}
 							className={`flex px-4 py-2 justify-between mb-1 ${
-								i % 2 === 0 ? 'bg-gray-900' : 'bg-transparent'
+								i % 2 === 0 ? 'bg-[#222]' : 'bg-transparent'
 							}`}
 						>
 							<strong className='text-red-400'>{band.name}</strong>

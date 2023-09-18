@@ -42,7 +42,7 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 		onSwipedLeft: () => handleClickNext(),
 		onSwipedRight: () => handleClickPrev(),
 		swipeDuration: 500,
-		preventScrollOnSwipe: false,
+		preventScrollOnSwipe: true,
 		trackMouse: true,
 	})
 
@@ -66,7 +66,7 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 
 	return (
 		<>
-			<PageTitle text='Varning Poster Gallery' size={6} />
+			<PageTitle text='Varning Poster Gallery' size={5} />
 			<div
 				{...handlers}
 				className='carousel-container bg-black overflow-hidden relative'
