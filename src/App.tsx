@@ -7,6 +7,7 @@ import Program from './components/Program'
 
 import { banners } from './data/images.ts'
 import NotFound from './components/NotFound.tsx'
+import ThingsToDo from './components/ThingsToDo.tsx'
 
 function App() {
 	const [windowSize, setWindowSize] = useState(0)
@@ -50,6 +51,7 @@ function App() {
 			<Routes>
 				<Route index element={<Carousel windowSize={windowSize} />}></Route>
 				<Route path='/program' element={<Program />}></Route>
+				<Route path='/things' element={<ThingsToDo />}></Route>
 				<Route path='*' element={<NotFound />} />
 			</Routes>
 			<footer>

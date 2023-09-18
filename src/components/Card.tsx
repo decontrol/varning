@@ -31,9 +31,7 @@ const Card = ({ show }: CardProps) => {
 							}`}
 						>
 							<strong className='text-white'>
-								<a href={band.link} target='_blank'>
-									{band.name}
-								</a>
+								<a href={band.link}>{band.name}</a>
 							</strong>
 							<p className='text-white'>{band.timeSlot}</p>
 						</li>

@@ -19,19 +19,26 @@ const Nav = ({ navMinimize }: NavProps) => {
 		)
 	}, [isOpen])
 
+	const navClasses = 'text-zinc-100 text-lg'
+
 	return (
 		<nav className={classes}>
 			<Hamburger color='#fff' toggled={isOpen} toggle={setOpen} size={24} />
 			{isOpen && (
-				<ul className='flex justify-evenly mb-2 mt-[-37px]'>
-					<li className='text-zinc-100 text-xl'>
+				<ul className='flex justify-evenly mb-2 mt-[-37px] mx-6'>
+					<li className={navClasses}>
 						<Link onClick={() => setOpen(false)} to='/'>
 							Posters
 						</Link>
 					</li>
-					<li className='text-zinc-100 text-xl'>
+					<li className={navClasses}>
 						<Link onClick={() => setOpen(false)} to='/program'>
 							Program
+						</Link>
+					</li>
+					<li className={navClasses}>
+						<Link onClick={() => setOpen(false)} to='/things'>
+							Things
 						</Link>
 					</li>
 				</ul>
