@@ -34,6 +34,11 @@ export const carouselData = [
 		description: '',
 		img: '../assets/images/carousel/img7.jpg',
 	},
+	{
+		_id: 8,
+		description: '',
+		img: '../assets/images/carousel/img7.jpg',
+	},
 ]
 
 const addEmptyLinks = () => {

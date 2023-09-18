@@ -55,7 +55,7 @@ function App() {
 				<Route path='*' element={<NotFound />} />
 			</Routes>
 			<footer>
-				<p className='text-sm md:text-md lg:text-lg text-red-200 text-center my-3'>
+				<p className='text-sm md:text-md lg:text-lg text-red-400 text-center my-3'>
 					&copy; Varning Productions {new Date().getFullYear()}&nbsp;{' '}
 					<em>
 						Nothing ever burns down by itself every fire needs a little bit of
