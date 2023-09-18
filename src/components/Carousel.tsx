@@ -69,8 +69,9 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 			<PageTitle size={5}>
 				15 years of Varning!
 				<br />
-				Check out Varning Poster Gallery.
-				<br /> "UP THE PUNX TABARNAC!!!"
+				Check out Varning Poster Gallery
+				<br />
+				<em>"UP THE PUNX TABARNAC!!!"</em>
 			</PageTitle>
 
 			<div
