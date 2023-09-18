@@ -4,7 +4,7 @@ const ThingsToDo = () => {
 	const headerClasses = 'text-xl text-red-400 mt-4 mb-1 font-header'
 	return (
 		<>
-			<PageTitle text='Here are things to do in Montreal' size={5} />
+			<PageTitle size={5}>Here are things to do in Montreal</PageTitle>
 			<h3 className={headerClasses}>Alcohol</h3>
 			<ul className='text-white'>
 				<li>Cheval Blanc (809 Ontario St E)</li>

@@ -5,7 +5,7 @@ import PageTitle from './PageTitle'
 const Program = () => {
 	return (
 		<>
-			<PageTitle text='Varning 2023 Program' size={5} />
+			<PageTitle size={5}>Varning 2023 Program</PageTitle>
 			<div className='card-container'>
 				<p className='text-white text-sm text-center mb-3'>
 					(*Click the name to check out bands)

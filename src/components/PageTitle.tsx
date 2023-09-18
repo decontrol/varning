@@ -1,10 +1,12 @@
+import { ReactNode } from 'react'
+
 type PageTitleProps = {
-	text: string
 	size: number
+	children: ReactNode
 }
 
-const PageTitle = ({ text, size }: PageTitleProps) => {
+const PageTitle = ({ size, children }: PageTitleProps) => {
 	const classes = `header-md text-center leading-10 text-2xl md:text-${size}xl text-red-500 font-header mt-4 mb-3`
-	return <h2 className={classes}>{text}</h2>
+	return <h2 className={classes}>{children}</h2>
 }
 export default PageTitle
