@@ -41,54 +41,43 @@ export const carouselData = [
 	},
 ]
 
-const addEmptyLinks = () => {
-	programData.map(() => {})
-}
-
-addEmptyLinks
-
 export const programData = [
 	{
 		_id: 1,
 		date: 'Thursday Main Show September 21st',
 		venue: 'Piranha Bar Basement (680 Saint-Catherine St W)',
 		price: '$25',
-		startTime: 'Doors: 6:30pm - Show: 7:00pm',
+		startTime: 'Doors: 6:30pm - Show: 7:30pm',
 		bands: [
 			{
 				name: 'No Fucker',
 				link: 'https://www.youtube.com/watch?v=MaBk-xPjI5A',
-				timeSlot: '11:25pm - 12:10am',
-			},
-			{
-				name: 'N.i.g.h.t.f.e.e.d.e.r',
-				link: 'https://nightfeeder.bandcamp.com/album/cut-all-of-your-face-off',
-				timeSlot: '10:35pm - 11:10pm',
+				timeSlot: '11:25pm - 12:00am',
 			},
 			{
 				name: 'Cartridge',
 				link: 'https://cartridgepunk.bandcamp.com/album/verleva',
-				timeSlot: '9:50pm - 10:20pm',
-			},
-			{
-				name: 'Uzu',
-				link: 'https://uzupunk.bandcamp.com/album/uzu',
-				timeSlot: '9:15pm - 9:35pm',
+				timeSlot: '10:35pm - 11:10pm',
 			},
 			{
 				name: 'Lathe of Heaven',
 				link: 'https://latheofheaven.bandcamp.com/album/bound-by-naked-skies',
-				timeSlot: '8:25pm - 9:00pm',
+				timeSlot: '9:45pm - 10:20pm',
+			},
+			{
+				name: 'Uzu',
+				link: 'https://uzupunk.bandcamp.com/album/uzu',
+				timeSlot: '9:00pm - 9:30pm',
 			},
 			{
 				name: 'Tenaz',
 				link: 'https://letmegooglethat.com/?q=tenaz+montreal+punk+band',
-				timeSlot: '7:40pm - 8:10pm',
+				timeSlot: '8:15pm - 8:45pm',
 			},
 			{
 				name: 'Street Gloves',
 				link: 'https://streetgloves.bandcamp.com/album/street-gloves-ep',
-				timeSlot: '7:00pm - 7:25pm',
+				timeSlot: '7:30pm - 8:00pm',
 			},
 		],
 	},
@@ -97,7 +86,7 @@ export const programData = [
 		date: 'Friday Matinee Show September 22nd',
 		venue: "L'Achoppe (1800 Letourneux St.)",
 		price: '$15',
-		startTime: 'Doors: 2:00pm - Show: 2:30pm',
+		startTime: 'Doors: 1:30pm - Show: 2:30pm',
 		bands: [
 			{
 				name: 'Battery March',
@@ -121,7 +110,7 @@ export const programData = [
 		date: 'Friday Main Show September 22nd',
 		venue: 'Piranha Bar Basement (680 Saint-Catherine St W)',
 		price: '$30',
-		startTime: 'Doors: 6:30 - Show: 7:00pm',
+		startTime: 'Doors: 6:30 - Show: 7:30pm',
 		bands: [
 			{
 				name: 'Cuir',
@@ -165,7 +154,7 @@ export const programData = [
 		date: 'Saturday Matinee Show September 23rd',
 		venue: "L'Achoppe (1800 Letourneux St.)",
 		price: '$15',
-		startTime: 'Doors: 2:00pm - Show: 2:30pm',
+		startTime: 'Doors: 1:30pm - Show: 2:30pm',
 		bands: [
 			{
 				name: 'Vestigio',
@@ -246,11 +235,6 @@ export const programData = [
 		startTime: 'Doors: 1:30am - Show: 1:45am',
 		bands: [
 			{
-				name: 'Last Agony',
-				link: 'https://lastagony.bandcamp.com/track/radiating-in-hell-2019',
-				timeSlot: '4:00am - 4:35am',
-			},
-			{
 				name: 'Agravio',
 				link: 'https://agravio.bandcamp.com/album/pinche-vida-pinche-mentira-ep',
 				timeSlot: '3:10am - 3:45am',
@@ -264,6 +248,135 @@ export const programData = [
 				name: 'Ordinance',
 				link: 'https://letmegooglethat.com/?q=ordinance+montreal+punk+band',
 				timeSlot: '1:45am - 2:10am',
+			},
+		],
+	},
+]
+
+export const thingsData = [
+	{
+		_id: 1,
+		category: 'Alcohol',
+		businesses: [
+			{
+				_id: 1,
+				name: 'Cheval Blanc',
+				desc: 'Great brew pub in downtown',
+				address: '809 Ontario St E',
+			},
+			{
+				_id: 2,
+				name: "L'Espace Public",
+				desc: 'Great brew pub in Hochelaga Village',
+				address: '3632 Ontario E',
+			},
+			{
+				_id: 3,
+				name: 'Dieu du ciel',
+				desc: 'Arguably the best/most famous brew pub',
+				address: '29 Avenue Laurier',
+			},
+			{
+				_id: 4,
+				name: "L'Amère A Boire",
+				desc: 'Euro style brew pub',
+				address: '2049 St-Denis',
+			},
+			{
+				_id: 5,
+				name: 'Stree drinking',
+				desc: 'Cheaper option but be discreet',
+				address: 'Everywhere',
+			},
+		],
+	},
+	{
+		_id: 2,
+		category: 'Food/Poutine',
+		businesses: [
+			{
+				_id: 1,
+				name: 'Shawarmaz',
+				desc: 'Best Shawarmas/Falafel',
+				address: '809 Ontario St E',
+			},
+			{
+				_id: 2,
+				name: 'Le Trèfle Hochelaga',
+				desc: 'Vegan brunch available',
+				address: '3632 Ontario E',
+			},
+			{
+				_id: 3,
+				name: 'Resto-Bar Le Pick-Up',
+				desc: 'Burger/Fries. No Poutine!',
+				address: '29 Avenue Laurier',
+			},
+			{
+				_id: 4,
+				name: 'Lafleuer',
+				desc: 'Poutine',
+				address: '2620 St-denis / 2120 Ontario E',
+			},
+			{
+				_id: 5,
+				name: 'Boustan',
+				desc: 'Classic Lebanese',
+				address: '819 Ste-Catherine E / 3417 Ontario St E',
+			},
+			{
+				_id: 6,
+				name: 'Aux Vivres',
+				desc: 'Wold famous Vegan Resto',
+				address: '4631 St Laurent',
+			},
+		],
+	},
+	{
+		_id: 3,
+		category: 'Records',
+		businesses: [
+			{
+				_id: 1,
+				name: 'Sonik',
+				desc: 'THE PUNK RECORD STORE',
+				address: '4050 Berri',
+			},
+			{
+				_id: 2,
+				name: 'Cheap Thrills',
+				desc: 'Oldest record store with diverse selection',
+				address: '2044 Metcalfe',
+			},
+			{
+				_id: 3,
+				name: 'Beatnick Records',
+				desc: 'Oldschool record store with knowledgeable staff',
+				address: '3770 Saint Denis',
+			},
+			{
+				_id: 4,
+				name: 'Le Pick-up / LeBackstore',
+				desc: 'Two grteat stores under one roof',
+				address: '169 Pins Ave E',
+			},
+			{
+				_id: 5,
+				name: 'Pump Up the Volume (aka Marche Noir)',
+				desc: 'A new record store inside vintage clothing shop',
+				address: '1359 Ontario E',
+			},
+			{
+				_id: 6,
+				name: 'Sound Central',
+				desc: 'Sean from Dopethrone runs this store ',
+				address: '486 Coloniale Ave',
+			},
+			{
+				_id: 7,
+				name: 'Aux 33 tours',
+				desc: 'The biggest store',
+				address: '1373 Mont-Royal Ave E',
 			},
 		],
 	},
