@@ -1,13 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
-import Carousel from './components/Carousel'
-import Nav from './components/Nav'
 import { useEffect, useState } from 'react'
 import { ToastContainer } from 'react-toastify'
 import Program from './components/Program'
-
-import { banners } from './data/images.ts'
+import Carousel from './components/Carousel'
+import Nav from './components/Nav'
 import NotFound from './components/NotFound.tsx'
 import ThingsToDo from './components/ThingsToDo.tsx'
+import { banners } from './data/images.ts'
 
 function App() {
 	const [windowSize, setWindowSize] = useState(0)
@@ -18,7 +17,7 @@ function App() {
 	}
 
 	useEffect(() => {
-		document.title = '15 Years of Varning!!!'
+		document.title = '15 Years of Varning!!! Up The Punx Tabarnac!!!'
 		setWindowSize(window.innerWidth)
 		windowSize > 1200 ? setNavMinimize(false) : setNavMinimize(true)
 	}, [windowSize])
