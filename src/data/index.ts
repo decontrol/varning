@@ -369,7 +369,7 @@ export const thingsData = [
 			{
 				_id: 6,
 				name: 'Sound Central',
-				desc: 'Sean from Dopethrone runs this store ',
+				desc: 'Sean from Dopethrone runs this store. Huge selection of new/used records ',
 				address: '486 Coloniale Ave',
 			},
 			{
