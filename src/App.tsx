@@ -23,7 +23,7 @@ function App() {
 	}, [windowSize])
 
 	return (
-		<div className='container px-[16px] w-full font-body lg:w-[958px] mx-auto'>
+		<div className='container px-[16px] w-full font-body lg:w-[750px] mx-auto'>
 			<Nav navMinimize={navMinimize} />
 			{/* <h1 className='header-lg font-header text-zinc-100 text-xl sm:text-4xl md:text-5xl lg:text-6xl mb-4'>
 				Varning From Montreal 2023

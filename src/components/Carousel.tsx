@@ -33,7 +33,7 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 	}
 
 	useEffect(() => {
-		setDistanceToMove(windowSize >= 1024 ? 926 : windowSize - 32) // '.container' has 16px on both sides so deducted 32 from both widths
+		setDistanceToMove(windowSize >= 1024 ? 718 : windowSize - 32) // '.container' has 16px on both sides so deducted 32 from both widths
 		notify()
 		// console.log('window size:', windowSize)
 	}, [windowSize])

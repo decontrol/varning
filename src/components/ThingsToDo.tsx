@@ -6,7 +6,7 @@ const ThingsToDo = () => {
 	return (
 		<>
 			<PageTitle size={5}>Here are things to do in Montreal</PageTitle>
-			<div className='things-container w-full mx-auto md:w-[700px]'>
+			<div className='things-container'>
 				<h3 className={headerClasses}>Alcohol</h3>
 				<ul className='text-white'>
 					<li className={liClasses}>
