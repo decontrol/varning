@@ -82,7 +82,7 @@ export const programData = [
 			},
 			{
 				name: 'Tenaz',
-				link: 'lolwhat',
+				link: 'https://letmegooglethat.com/?q=tenaz+montreal+punk+band',
 				timeSlot: '7:40pm - 8:10pm',
 			},
 			{
@@ -184,7 +184,7 @@ export const programData = [
 			},
 			{
 				name: 'The Nod',
-				link: 'lolwhat',
+				link: 'https://letmegooglethat.com/?q=the+nod+montreal+punk+band',
 				timeSlot: '2:30pm - 2:55pm',
 			},
 		],
@@ -262,7 +262,7 @@ export const programData = [
 			},
 			{
 				name: 'Ordinance',
-				link: 'lolwhat',
+				link: 'https://letmegooglethat.com/?q=ordinance+montreal+punk+band',
 				timeSlot: '1:45am - 2:10am',
 			},
 		],
