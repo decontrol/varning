@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
-import { banners } from '../data/images.ts'
 import { carouselData } from '../data/index.ts'
-import CarouselButton from './CarouselButton'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+
 import PageTitle from './PageTitle.tsx'
+import CarouselButton from './CarouselButton'
 
 type CarouselProps = {
 	windowSize: number
@@ -41,7 +41,7 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 	const handlers = useSwipeable({
 		onSwipedLeft: () => handleClickNext(),
 		onSwipedRight: () => handleClickPrev(),
-		swipeDuration: 500,
+		swipeDuration: 750,
 		preventScrollOnSwipe: true,
 		trackMouse: true,
 	})
@@ -69,7 +69,7 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 			<PageTitle size={5}>
 				15 years of Varning!
 				<br />
-				Check out Varning Poster Gallery
+				Check out Varning Posters
 				<br />
 				<em>"UP THE PUNX TABARNAC!!!"</em>
 			</PageTitle>
@@ -84,7 +84,7 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 						return (
 							<div key={item._id} className='w-full shrink-0 inline-block'>
 								<img
-									src={banners[i]}
+									src={item.img}
 									alt={item.description}
 									className='w-full shrink-0 h-full object-fit'
 								/>
@@ -98,17 +98,19 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 				<div className='flex justify-between items-center'>
 					<CarouselButton
 						onClickFunc={handleClickPrev}
-						text='&#x2190;'
 						direction='prev'
 						hide={slideCount === 1}
-					></CarouselButton>
+					>
+						&#x2190;
+					</CarouselButton>
 
 					<CarouselButton
 						onClickFunc={handleClickNext}
-						text='&#x2192;'
 						direction='next'
 						hide={slideCount === slideLength}
-					></CarouselButton>
+					>
+						&#x2192;
+					</CarouselButton>
 				</div>
 			</div>
 		</>

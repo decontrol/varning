@@ -1,43 +1,45 @@
+import { banners } from './images'
+
 export const carouselData = [
 	{
 		_id: 1,
 		description: '',
-		img: '../assets/images/carousel/img1.jpg',
+		img: banners[0],
 	},
 	{
 		_id: 2,
 		description: '',
-		img: '../assets/images/carousel/img2.jpg',
+		img: banners[1],
 	},
 	{
 		_id: 3,
 		description: '',
-		img: '../assets/images/carousel/img3.jpg',
+		img: banners[2],
 	},
 	{
 		_id: 4,
 		description: '',
-		img: '../assets/images/carousel/img4.jpg',
+		img: banners[3],
 	},
 	{
 		_id: 5,
 		description: '',
-		img: '../assets/images/carousel/img5.jpg',
+		img: banners[4],
 	},
 	{
 		_id: 6,
 		description: '',
-		img: '../assets/images/carousel/img6.jpg',
+		img: banners[5],
 	},
 	{
 		_id: 7,
 		description: '',
-		img: '../assets/images/carousel/img7.jpg',
+		img: banners[6],
 	},
 	{
 		_id: 8,
 		description: '',
-		img: '../assets/images/carousel/img7.jpg',
+		img: banners[7],
 	},
 ]
 
@@ -245,8 +247,8 @@ export const programData = [
 				timeSlot: '2:25am - 2:55pm',
 			},
 			{
-				name: 'Ordinance',
-				link: 'https://letmegooglethat.com/?q=ordinance+montreal+punk+band',
+				name: 'Ordnance',
+				link: 'https://letmegooglethat.com/?q=ordnance+montreal+punk+band',
 				timeSlot: '1:45am - 2:10am',
 			},
 		],
@@ -357,7 +359,7 @@ export const thingsData = [
 			{
 				_id: 4,
 				name: 'Le Pick-up / LeBackstore',
-				desc: 'Two grteat stores under one roof',
+				desc: 'Two great stores under one roof',
 				address: '169 Pins Ave E',
 			},
 			{

@@ -1,12 +1,13 @@
 import { Route, Routes } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { ToastContainer } from 'react-toastify'
+import { banners } from './data/images.ts'
+
 import Program from './components/Program'
 import Carousel from './components/Carousel'
 import Nav from './components/Nav'
 import NotFound from './components/NotFound.tsx'
 import ThingsToDo from './components/ThingsToDo.tsx'
-import { banners } from './data/images.ts'
 
 function App() {
 	const [windowSize, setWindowSize] = useState(0)

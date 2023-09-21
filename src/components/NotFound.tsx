@@ -1,4 +1,5 @@
 import PageTitle from './PageTitle'
+
 const NotFound = () => {
 	return (
 		<>
