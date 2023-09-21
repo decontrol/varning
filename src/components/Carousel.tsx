@@ -80,7 +80,7 @@ const Carousel = ({ windowSize }: CarouselProps) => {
 			>
 				<div className={classes} style={{ right: `${rightDistance}px` }}>
 					{/* h-full sm:h-[600px] md:h-[800px] lg:h-[1200px] xl:h-[1500px] */}
-					{carouselData.map((item, i) => {
+					{carouselData.map((item) => {
 						return (
 							<div key={item._id} className='w-full shrink-0 inline-block'>
 								<img
