@@ -250,8 +250,8 @@ export const programData = [
 				timeSlot: '2:15am - 2:40pm',
 			},
 			{
-				name: 'Systema',
-				link: 'https://letmegooglethat.com/?q=systema+punk+band',
+				name: 'Sistema de Muerte',
+				link: 'https://duckduckgo.com/',
 				timeSlot: '1:30am - 2:00am',
 			},
 			{
