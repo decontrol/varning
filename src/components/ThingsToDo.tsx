@@ -1,9 +1,9 @@
-import { thingsData } from '../data/index.ts'
-import PageTitle from './PageTitle'
+import { thingsData } from '../data/index.ts';
+import PageTitle from './PageTitle';
 
 const ThingsToDo = () => {
-	const headerClasses = 'text-xl text-red-400 mt-4 mb-1 font-header'
-	const businessClasses = 'flex justify-between text-md'
+	const headerClasses = 'text-xl text-vgreylight mt-4 mb-1 font-header';
+	const businessClasses = 'flex justify-between text-md';
 
 	const things = thingsData.map((thing) => {
 		return (
@@ -14,28 +14,25 @@ const ThingsToDo = () => {
 						return (
 							<li
 								key={business._id}
-								className={`mb-5 px-4 py-2 rounded-md ${
-									i % 2 === 0 ? 'bg-[#222]' : 'bg-transparent'
-								}`}
-							>
+								className={`mb-5 px-4 py-2 ${i % 2 === 0 ? 'bg-vgrey' : 'bg-transparent'}`}>
 								<div className={businessClasses}>
 									<strong className='text-lg'>{business.name}</strong>{' '}
 									<em className='text-sm'>{business.address}</em>
 								</div>
 								<p>{business.desc}</p>
 							</li>
-						)
+						);
 					})}
 				</ul>
 			</div>
-		)
-	})
+		);
+	});
 
 	return (
 		<>
-			<PageTitle size={5}>Here are things to do in Montreal</PageTitle>
+			<PageTitle>Here are things to do in Montreal</PageTitle>
 			<div className='things-container text-white'>{things}</div>
 		</>
-	)
-}
-export default ThingsToDo
+	);
+};
+export default ThingsToDo;

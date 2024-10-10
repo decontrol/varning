@@ -12,7 +12,13 @@ export default {
 				header: ['Special Elite'],
 				stencil: ['Stardos Stencil'],
 			},
+			colors: {
+				pred: '#e4312b',
+				pgreen: '#149954',
+				vgrey: '#222',
+				vgreylight: '#666',
+			},
 		},
 	},
 	plugins: [],
-}
+};

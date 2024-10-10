@@ -1,259 +1,267 @@
-import { banners } from './images'
-
-export const carouselData = [
-	{
-		_id: 1,
-		description: '',
-		img: banners[0],
-	},
-	{
-		_id: 2,
-		description: '',
-		img: banners[1],
-	},
-	{
-		_id: 3,
-		description: '',
-		img: banners[2],
-	},
-	{
-		_id: 4,
-		description: '',
-		img: banners[3],
-	},
-	{
-		_id: 5,
-		description: '',
-		img: banners[4],
-	},
-	{
-		_id: 6,
-		description: '',
-		img: banners[5],
-	},
-	{
-		_id: 7,
-		description: '',
-		img: banners[6],
-	},
-	{
-		_id: 8,
-		description: '',
-		img: banners[7],
-	},
-]
+import { banners } from './images';
 
 export const programData = [
 	{
 		_id: 1,
-		date: 'Thursday Main Show September 21st',
+		poster: {
+			description: '',
+			img: banners[1],
+		},
+		date: 'Thursday Main Show October 17th',
 		venue: 'Piranha Bar Basement (680 Saint-Catherine St W)',
 		price: '$25',
-		startTime: 'Doors: 6:30pm - Show: 7:30pm',
+		startTime: 'Doors: 6:30pm - Show: 7pm',
 		bands: [
 			{
-				name: 'No Fucker',
-				link: 'https://www.youtube.com/watch?v=MaBk-xPjI5A',
-				timeSlot: '11:25pm - 12:00am',
+				name: 'Phane',
+				link: 'https://phanepunx.bandcamp.com/',
+				timeSlot: '12:15pm - 12:55am',
 			},
 			{
-				name: 'Cartridge',
-				link: 'https://cartridgepunk.bandcamp.com/album/verleva',
+				name: 'Béton Armé',
+				link: 'https://betonarmeoimtl.bandcamp.com',
+				timeSlot: '11:25pm - 12:00pm',
+			},
+			{
+				name: 'The Retrospects',
+				link: 'https://theretrospects.bandcamp.com/album/the-retrospects',
 				timeSlot: '10:35pm - 11:10pm',
 			},
 			{
-				name: 'Lathe of Heaven',
-				link: 'https://latheofheaven.bandcamp.com/album/bound-by-naked-skies',
-				timeSlot: '9:45pm - 10:20pm',
+				name: 'Crisis Party',
+				link: 'https://crisisparty.bandcamp.com/',
+				timeSlot: '9:50pm - 10:20pm',
 			},
 			{
-				name: 'Uzu',
-				link: 'https://uzupunk.bandcamp.com/album/uzu',
-				timeSlot: '9:00pm - 9:30pm',
+				name: 'New Vogue',
+				link: 'https://newvogue.bandcamp.com/album/waiting-daze',
+				timeSlot: '9:05pm - 9:35pm',
+			},
+			{
+				name: 'Spleen',
+				link: 'https://roachlegrecords.bandcamp.com/album/demo-14',
+				timeSlot: '8:20pm - 8:50pm',
 			},
 			{
 				name: 'Tenaz',
-				link: 'https://letmegooglethat.com/?q=tenaz+montreal+punk+band',
-				timeSlot: '8:15pm - 8:45pm',
+				link: 'https://tenaz.bandcamp.com/album/tenaz-demo',
+				timeSlot: '7:40pm - 8:05pm',
 			},
 			{
-				name: 'Street Gloves',
-				link: 'https://streetgloves.bandcamp.com/album/street-gloves-ep',
-				timeSlot: '7:30pm - 8:00pm',
+				name: 'Pied de biche',
+				link: 'https://pied-de-biche.bandcamp.com/album/demo-1',
+				timeSlot: '7:00pm - 7:25pm',
 			},
 		],
 	},
 	{
 		_id: 2,
-		date: 'Friday Matinee Show September 22nd',
-		venue: "L'Achoppe (1800 Letourneux St.)",
-		price: '$15',
-		startTime: 'Doors: 1:30pm - Show: 2:30pm',
+		poster: {
+			description: '',
+			img: banners[2],
+		},
+		date: 'Friday Matinee Show October 18th',
+		venue: 'Piranha Bar Upstairs (680 Saint-Catherine St W)',
+		price: '$20',
+		startTime: 'Doors: 12:30pm - Show: 1:30pm',
 		bands: [
 			{
-				name: 'Battery March',
-				link: 'https://batterymarch.bandcamp.com/album/boston-eats-its-young-futur-pour-eux-ep',
-				timeSlot: '3:50pm - 4:20pm',
+				name: 'The Hell',
+				link: 'https://notfortheweakrecords.bandcamp.com/album/the-hell',
+				timeSlot: '3:50pm - 4:30pm',
 			},
 			{
-				name: 'Total Nada',
-				link: 'https://totalnada.bandcamp.com/album/total-nada-ii-e-p',
-				timeSlot: '3:10pm - 3:35pm',
+				name: 'Skrout',
+				link: 'https://brokenskull.bandcamp.com/album/6-song-ep',
+				timeSlot: '3:00pm - 3:35pm',
 			},
 			{
-				name: 'Beef',
-				link: 'https://gotbeef.bandcamp.com/album/raw-cuts-2023',
-				timeSlot: '2:30pm - 2:55pm',
+				name: 'Serpent Corpse',
+				link: 'https://serpentcorpse.bandcamp.com/',
+				timeSlot: '2:15pm - 2:45pm',
+			},
+			{
+				name: 'Street Gloves',
+				link: 'https://streetgloves.bandcamp.com/album/street-gloves-ep',
+				timeSlot: '1:30pm - 2:00pm',
 			},
 		],
 	},
 	{
 		_id: 3,
-		date: 'Friday Main Show September 22nd',
+		poster: {
+			description: '',
+			img: banners[3],
+		},
+		date: 'Friday Main Show October 18th',
 		venue: 'Piranha Bar Basement (680 Saint-Catherine St W)',
-		price: '$30',
-		startTime: 'Doors: 6:30 - Show: 7:30pm',
+		price: '$35',
+		startTime: 'Doors: 6:30pm - Show: 7pm',
 		bands: [
 			{
-				name: 'Cuir',
-				link: 'https://cuir1.bandcamp.com/album/album',
-				timeSlot: '12:15am - 12:55am',
+				name: 'Terminal Filth',
+				link: 'https://terminalfilth.bandcamp.com/',
+				timeSlot: '12:20am - 1:10am',
 			},
 			{
-				name: 'Salvaje Punk',
-				link: 'https://toxicstaterecords.bandcamp.com/album/salvaje-punk-lp-2023',
-				timeSlot: '11:25pm - 12:00am',
+				name: "Tàrrega 91'",
+				link: 'https://lavidaesunmus.bandcamp.com/album/fill-de-la-merda',
+				timeSlot: '11:25pm - 12:05am',
 			},
 			{
-				name: 'Perestroika',
-				link: 'https://perestroika-mtl.bandcamp.com/album/monolith',
+				name: 'Absolut',
+				link: 'https://absolutnoise.bandcamp.com/',
 				timeSlot: '10:35pm - 11:10pm',
 			},
 			{
-				name: 'Hysteric Polemix',
-				link: 'https://roachlegrecords.bandcamp.com/album/hysteric-polemix-songs-for-the-solstice',
-				timeSlot: '9:45pm - 10:20pm',
+				name: 'Zeal',
+				link: 'https://brokenskull.bandcamp.com/album/zeal',
+				timeSlot: '9:50pm - 10:20pm',
 			},
 			{
-				name: 'Ultra Razzia',
-				link: 'https://primatorcrew.bandcamp.com/album/ultra-razzia-jusquau-bout-de-la-nuit',
-				timeSlot: '9:00pm - 9:30pm',
+				name: 'Warkrusher',
+				link: 'https://inbattlethereisnosobriety.bandcamp.com/',
+				timeSlot: '9:05pm - 9:35pm',
 			},
 			{
-				name: 'Ilusión',
-				link: 'https://ilusion.bandcamp.com/album/ilusi-n-ep',
-				timeSlot: '8:15pm - 8:45pm',
+				name: 'Total Nada',
+				link: 'https://totalnada.bandcamp.com/album/total-nada-ii-e-p',
+				timeSlot: '8:20pm - 8:50pm',
 			},
 			{
-				name: 'Over The Hill',
-				link: 'https://overthehillmtl.bandcamp.com/album/demonstration-2022',
-				timeSlot: '7:30pm - 8:00pm',
+				name: 'Vestigo',
+				link: 'https://vestigiohc.bandcamp.com/album/vestigio',
+				timeSlot: '7:40pm - 8:05pm',
+			},
+			{
+				name: 'Rat Piss',
+				link: 'https://ratpissmtl.bandcamp.com/album/four-humors',
+				timeSlot: '7:00pm - 7:25pm',
 			},
 		],
 	},
 	{
 		_id: 4,
-		date: 'Saturday Matinee Show September 23rd',
-		venue: "L'Achoppe (1800 Letourneux St.)",
-		price: '$15',
-		startTime: 'Doors: 1:30pm - Show: 2:30pm',
-		bands: [
-			{
-				name: 'Vestigio',
-				link: 'https://vestigiohc.bandcamp.com/album/vestigio',
-				timeSlot: '4:40pm - 5:15pm',
-			},
-			{
-				name: 'Ratpiss',
-				link: 'https://ratpissmtl.bandcamp.com/album/misanthropy-now',
-				timeSlot: '3:55pm - 4:25pm',
-			},
-			{
-				name: 'Leash Aggression',
-				link: 'https://www.youtube.com/watch?v=5isTP8wOQKk',
-				timeSlot: '3:10pm - 3:40pm',
-			},
-			{
-				name: 'The Nod',
-				link: 'https://letmegooglethat.com/?q=the+nod+montreal+punk+band',
-				timeSlot: '2:30pm - 2:55pm',
-			},
-		],
+		poster: {
+			description: '',
+			img: banners[4],
+		},
+		date: 'Saturday Punk Market October 19th',
+		venue: 'Piranha Bar Upstairs (680 Saint-Catherine St W)',
+		price: 'FREE',
+		startTime: 'STARTS AT NOON',
 	},
 	{
 		_id: 5,
-		date: 'Saturday Main Show September 23rd',
-		venue: 'Piranha Bar Basement (680 Saint-Catherine St W)',
-		price: '$30',
-		startTime: 'Doors: 6:30 - Show: 7:00pm',
+		poster: {
+			description: '',
+			img: banners[5],
+		},
+		date: 'Saturday Matinee Show October 19th',
+		venue: 'Piranha Bar Upstairs (680 Saint-Catherine St W)',
+		price: '$20',
+		startTime: 'Doors: 12:30pm - Show: 1:30pm',
 		bands: [
 			{
-				name: '	Meanwhile',
-				link: 'https://www.youtube.com/watch?v=AfFfHAkozBk',
-				timeSlot: '12: 25am - 01: 10am',
-			},
-			{
-				name: 'End Of Pollution',
-				link: 'https://www.youtube.com/watch?v=Da1tEy3ht34',
-				timeSlot: '11: 25pm - 12: 10am',
-			},
-			{
-				name: 'Decomp',
-				link: 'https://decomp.bandcamp.com/album/remains',
-				timeSlot: '10: 35pm - 11: 10pm',
-			},
-			{
-				name: 'Unknown Liberty',
-				link: 'https://unknownliberty.bandcamp.com/album/chaos-ny',
-				timeSlot: '9: 50pm - 10: 20pm',
-			},
-			{
-				name: 'Global Holocaust',
-				link: 'https://www.youtube.com/watch?v=8BumIre9Vu8',
-				timeSlot: '9: 15pm - 9: 35pm',
-			},
-			{
-				name: 'The Lousy',
-				link: 'https://thelousy.bandcamp.com/',
-				timeSlot: '8: 25pm - 9:00pm',
-			},
-			{
-				name: 'Fractured',
-				link: 'https://fractured3.bandcamp.com/album/split-with-phane',
-				timeSlot: '7: 40pm - 8: 10pm',
+				name: 'Siege Fire',
+				link: 'https://siegefire.bandcamp.com/album/the-devastating-cost',
+				timeSlot: '3:50pm - 4:30pm',
 			},
 			{
 				name: 'A.T.E.R.',
-				link: 'https://atercrust.bandcamp.com/album/demo-2022',
-				timeSlot: '7:00pm - 7: 25pm',
+				link: 'https://atercrust.bandcamp.com/',
+				timeSlot: '3:00pm - 3:35pm',
+			},
+			{
+				name: 'White Collar',
+				link: 'https://whitecollarbanned.bandcamp.com/album/white-collar',
+				timeSlot: '2:15pm - 2:45pm',
+			},
+			{
+				name: 'Portal Tomb',
+				link: 'https://portaltomb.bandcamp.com/album/last-frost-demo',
+				timeSlot: '1:30pm - 2:00pm',
+			},
+		],
+	},
+
+	{
+		_id: 6,
+		poster: {
+			description: '',
+			img: banners[6],
+		},
+		date: 'Saturday Main Show October 19th',
+		venue: 'Piranha Bar Basement (680 Saint-Catherine St W)',
+		price: '$35',
+		startTime: 'Doors: 6:30 - Show: 7:30pm',
+		bands: [
+			{
+				name: 'Coupe Gorge',
+				link: 'https://coupegorge.bandcamp.com/',
+				timeSlot: '11:25am - 12:15am',
+			},
+			{
+				name: 'Flash',
+				link: 'https://lavidaesunmus.bandcamp.com/album/s-t-19',
+				timeSlot: '10:30pm - 11:10am',
+			},
+			{
+				name: 'Imploders',
+				link: 'https://staticshockrecords.bandcamp.com/album/imploders',
+				timeSlot: '9:40pm - 10:15pm',
+			},
+			{
+				name: 'Faze',
+				link: 'https://11pmrecords.bandcamp.com/album/content',
+				timeSlot: '8:55pm - 9:25pm',
+			},
+			{
+				name: 'Young Blades',
+				link: 'https://youngbladesofficial.bandcamp.com/',
+				timeSlot: '8:10pm - 8:40pm',
+			},
+			{
+				name: 'Mötörwölf',
+				link: 'https://motorwolf.bandcamp.com/album/burnin-daze',
+				timeSlot: '7:30pm - 7:55pm',
 			},
 		],
 	},
 	{
-		_id: 6,
-		date: 'Saturday After Show September 23rd (Sunday 24th)',
-		venue: 'Traxide (Ask A Punk)',
-		price: '$15',
-		startTime: 'Doors: 1:30am - Show: 1:45am',
+		_id: 7,
+		poster: {
+			description: '',
+			img: banners[7],
+		},
+		date: 'Saturday After Show October 20th',
+		venue: 'Piranha Bar Upstairs (680 Saint-Catherine St W)',
+		price: '$20',
+		startTime: 'Doors: 12:30am - Show: 1:00am',
 		bands: [
 			{
-				name: 'Agravio',
-				link: 'https://agravio.bandcamp.com/album/pinche-vida-pinche-mentira-ep',
-				timeSlot: '3:10am - 3:45am',
+				name: 'Psych-War',
+				link: 'https://psych-war.bandcamp.com/album/demo-23',
+				timeSlot: '2:55am - 3:25am',
 			},
 			{
-				name: 'Zeal',
-				link: 'https://runstatetapes.bandcamp.com/album/zeal-demonstration-2022',
-				timeSlot: '2:25am - 2:55pm',
+				name: 'Electric Masochist',
+				link: 'https://electricmasochist.bandcamp.com/',
+				timeSlot: '2:15am - 2:40pm',
 			},
 			{
-				name: 'Ordnance',
-				link: 'https://letmegooglethat.com/?q=ordnance+montreal+punk+band',
-				timeSlot: '1:45am - 2:10am',
+				name: 'Systema',
+				link: 'https://letmegooglethat.com/?q=systema+punk+band',
+				timeSlot: '1:30am - 2:00am',
+			},
+			{
+				name: 'The Not',
+				link: 'https://biblicallyaccuratebandcamp.bandcamp.com/album/lp-i',
+				timeSlot: '1:00am - 1:20am',
 			},
 		],
 	},
-]
+];
 
 export const thingsData = [
 	{
@@ -311,13 +319,13 @@ export const thingsData = [
 			{
 				_id: 3,
 				name: 'Le Trèfle Hochelaga',
-				desc: 'Vegan brunch available',
+				desc: 'Vegan brunch available on Saturday/Sunday',
 				address: '3632 Ontario E',
 			},
 			{
 				_id: 4,
 				name: 'Resto-Bar Le Pick-Up',
-				desc: 'Burger/Fries. No Poutine!',
+				desc: 'Burger/Fries.',
 				address: '29 Avenue Laurier',
 			},
 			{
@@ -371,7 +379,7 @@ export const thingsData = [
 			{
 				_id: 5,
 				name: 'Pump Up the Volume (aka Marche Noir)',
-				desc: 'A new record store inside vintage clothing shop',
+				desc: 'A record store inside vintage clothing shop',
 				address: '1359 Ontario E',
 			},
 			{
@@ -388,4 +396,4 @@ export const thingsData = [
 			},
 		],
 	},
-]
+];
