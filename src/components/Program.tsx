@@ -16,7 +16,7 @@ const Program = () => {
 								alt={show.poster.description}
 								className='w-full md:w-1/2'
 							/>
-							<Card className='w-full md:w-1/2' show={show} />
+							<Card show={show} />
 						</div>
 					);
 				})}

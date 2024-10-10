@@ -10,7 +10,7 @@ type CardProps = {
 		startTime: string;
 		bands?: {
 			name: string;
-			link?: string;
+			link: string;
 			timeSlot: string;
 		}[];
 	};
