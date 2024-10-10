@@ -10,13 +10,13 @@ const Program = () => {
 				<p className='text-white text-sm text-center mb-3'>(*Click the name to check out bands)</p>
 				{programData.map((show) => {
 					return (
-						<div key={show._id} className='md:flex md:gap-4 mb-4'>
+						<div key={show._id} className='md:flex md:gap-4 mb-4 w-full'>
 							<img
 								src={show.poster.img}
 								alt={show.poster.description}
 								className='w-full md:w-1/2'
 							/>
-							<Card show={show} />
+							<Card className='w-full md:w-1/2' show={show} />
 						</div>
 					);
 				})}

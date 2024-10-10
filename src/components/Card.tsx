@@ -18,7 +18,7 @@ type CardProps = {
 
 const Card = ({ show }: CardProps) => {
 	return (
-		<div className='card mt-4 md:mt-0 text-center'>
+		<div className='card mt-4 md:mt-0 text-center w-full md:w-1/2'>
 			<h3 className='text-lg text-vgreylight mb-1 font-header'>{show.date}</h3>
 			<p className='text-sm text-bold text-white mb-4'>
 				{show.venue}
