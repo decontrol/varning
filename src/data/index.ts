@@ -15,27 +15,32 @@ export const programData = [
 			{
 				name: 'Phane',
 				link: 'https://phanepunx.bandcamp.com/',
-				timeSlot: '12:15pm - 12:55am',
+				timeSlot: '11:55pm - 12:35am',
 			},
 			{
 				name: 'Béton Armé',
 				link: 'https://betonarmeoimtl.bandcamp.com',
-				timeSlot: '11:25pm - 12:00pm',
+				timeSlot: '11:05pm - 11:40pm',
 			},
 			{
 				name: 'The Retrospects',
 				link: 'https://theretrospects.bandcamp.com/album/the-retrospects',
-				timeSlot: '10:35pm - 11:10pm',
+				timeSlot: '10:15pm - 10:50pm',
+			},
+			{
+				name: 'Faze',
+				link: 'https://11pmrecords.bandcamp.com/album/content',
+				timeSlot: '9:30pm - 10:00pm',
 			},
 			{
 				name: 'Crisis Party',
 				link: 'https://crisisparty.bandcamp.com/',
-				timeSlot: '9:50pm - 10:20pm',
+				timeSlot: '8:45pm - 9:15pm',
 			},
 			{
 				name: 'New Vogue',
 				link: 'https://newvogue.bandcamp.com/album/waiting-daze',
-				timeSlot: '9:05pm - 9:35pm',
+				timeSlot: '8:05pm - 8:30pm',
 			},
 			{
 				name: 'Spleen',
@@ -43,14 +48,9 @@ export const programData = [
 				timeSlot: '8:20pm - 8:50pm',
 			},
 			{
-				name: 'Tenaz',
-				link: 'https://tenaz.bandcamp.com/album/tenaz-demo',
-				timeSlot: '7:40pm - 8:05pm',
-			},
-			{
 				name: 'Pied de biche',
 				link: 'https://pied-de-biche.bandcamp.com/album/demo-1',
-				timeSlot: '7:00pm - 7:25pm',
+				timeSlot: '7:30pm - 7:50pm',
 			},
 		],
 	},
@@ -212,13 +212,13 @@ export const programData = [
 				timeSlot: '9:40pm - 10:15pm',
 			},
 			{
-				name: 'Faze',
-				link: 'https://11pmrecords.bandcamp.com/album/content',
+				name: 'Young Blades',
+				link: 'https://youngbladesofficial.bandcamp.com/',
 				timeSlot: '8:55pm - 9:25pm',
 			},
 			{
-				name: 'Young Blades',
-				link: 'https://youngbladesofficial.bandcamp.com/',
+				name: 'Tenaz',
+				link: 'https://tenaz.bandcamp.com/album/tenaz-demo',
 				timeSlot: '8:10pm - 8:40pm',
 			},
 			{
@@ -271,13 +271,13 @@ export const thingsData = [
 			{
 				_id: 1,
 				name: 'Cheval Blanc',
-				desc: 'Great brew pub in downtown',
+				desc: 'Great brew pub in downtown. Friendly staff',
 				address: '809 Ontario St E',
 			},
 			{
 				_id: 2,
 				name: "L'Espace Public",
-				desc: 'Great brew pub in Hochelaga Village',
+				desc: 'Neighbourhood brew pub in Hochelaga Village',
 				address: '3632 Ontario E',
 			},
 			{
@@ -314,7 +314,7 @@ export const thingsData = [
 				_id: 2,
 				name: 'Shawarmaz',
 				desc: 'Best Shawarmas/Falafel',
-				address: '809 Ontario St E',
+				address: '1340 Saint-Catherine St W / 277 St Catherine St E',
 			},
 			{
 				_id: 3,

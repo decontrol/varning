@@ -15,8 +15,8 @@ export default {
 			colors: {
 				pred: '#e4312b',
 				pgreen: '#149954',
-				vgrey: '#222',
-				vgreylight: '#666',
+				vgrey: '#31363f',
+				vgreylight: '#61677A',
 			},
 		},
 	},

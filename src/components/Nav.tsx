@@ -12,16 +12,16 @@ const Nav = ({ navMinimize }: NavProps) => {
 
 	useEffect(() => {
 		setClasses(
-			`nav fixed top-0 right-0 z-10 bg-vgrey px-3 py-1 transition-all duration-500 ease-in-out
+			`nav fixed top-0 right-0 z-10 bg-white px-3 py-1 mt-1 mr-1 transition-all duration-500 ease-in-out
       ${navMinimize ? 'mini-nav' : 'full-nav'} ${isOpen ? 'bg-opacity-95 w-full' : ''}`
 		);
 	}, [isOpen, navMinimize]);
 
-	const navClasses = 'text-zinc-100 text-lg';
+	const navClasses = 'text-black text-lg';
 
 	return (
 		<nav className={classes}>
-			<Hamburger color='#fff' toggled={isOpen} toggle={setOpen} size={24} />
+			<Hamburger color='#000' toggled={isOpen} toggle={setOpen} size={24} />
 			{isOpen && (
 				<ul className='flex justify-evenly mb-2 mt-[-37px] mx-6'>
 					<li className={navClasses}>
