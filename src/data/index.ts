@@ -43,11 +43,6 @@ export const programData = [
 				timeSlot: '8:05pm - 8:30pm',
 			},
 			{
-				name: 'Spleen',
-				link: 'https://roachlegrecords.bandcamp.com/album/demo-14',
-				timeSlot: '8:20pm - 8:50pm',
-			},
-			{
 				name: 'Pied de biche',
 				link: 'https://pied-de-biche.bandcamp.com/album/demo-1',
 				timeSlot: '7:30pm - 7:50pm',
