@@ -30,12 +30,12 @@ const Nav = ({ navMinimize }: NavProps) => {
 						</Link>
 					</li>
 					<li className={navClasses}>
-						<Link onClick={() => setOpen(false)} to='/program'>
+						<Link onClick={() => setOpen(false)} to='program'>
 							Program
 						</Link>
 					</li>
 					<li className={navClasses}>
-						<Link onClick={() => setOpen(false)} to='/things'>
+						<Link onClick={() => setOpen(false)} to='things'>
 							Things to do in Montreal
 						</Link>
 					</li>
